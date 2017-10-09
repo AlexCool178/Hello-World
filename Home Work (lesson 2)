@@ -1,5 +1,20 @@
  Напишите программу, округляющую числа.
  Используйте Math.round(). НЕ использовать класс BigDecimal.
+ 
+ public class round {    
+ public static void main(String[] args) {        
+ double a = 34.78;        
+ System.out.println(Math.round(a)); // prints 35        
+ double b = 34.15;        
+ b = Math.round(b);        
+ System.out.println(b); // prints 34.0        
+ float c = 5.6f;        
+ System.out.println(Math.round(c)); // prints 6        
+ float d = 30f;        
+ d = Math.round(d);        
+ System.out.println(d); // prints 30.0    
+ }
+ }
  ===============================================================
  Напишите программу, которая несколько раз выводит HelloWorld
  с помощью различных циклов.
@@ -60,5 +75,19 @@
  до 10000. Простые числа делятся только на себя и на 1. 
  Двумя способами – полный перебор и решето Эрастофена. 
  Попробуйте посмотреть, какой из методов быстрее. (если не видно, увеличьте интервал)
-
-
+ 
+ public class simple {    
+ public static void main(String[] args) {        
+ boolean simple = true;        
+ for (int i = 2; i <= 10000; i++) {            
+ for (int j = 2; j < i; j++) {                
+ if (i % j == 0) {                    
+ simple = false;                    
+ break;                
+ }            
+ }            
+ if (simple) System.out.println(i);           
+ simple = true;        
+ }    
+ }
+ ==================================================================
