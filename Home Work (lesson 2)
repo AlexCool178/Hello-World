@@ -1,1 +1,37 @@
+ Напишите программу, округляющую числа.
+ Используйте Math.round(). НЕ использовать класс BigDecimal.
+
+ Напишите программу, которая несколько раз выводит HelloWorld
+ с помощью различных циклов.
+ public class cycles {    
+ public static void main(String[] args) {        
+ // using for        
+ for (int a = 0; a < 5; a++){            
+ System.out.println("Hello World");        
+ }        
+ System.out.println("");        
+ // using while        
+ int b = 4;        
+ while (b < 6){            
+ System.out.println("Hello World");            
+ b++;        
+ }        
+ System.out.println("");        
+ // using do while        
+ int c = 3;        
+ do {            
+ System.out.println("Hello World");            
+ c++;        
+ }        
+ while (c < 7);    
+ }
+ }
+ Напишите программу, находящую максимум и минимум в массиве. 
+ Массив заполняется случайными значения.  Используйте класс Random.
+
+ Написать программу, которая находит простые числа от 2
+ до 10000. Простые числа делятся только на себя и на 1. 
+ Двумя способами – полный перебор и решето Эрастофена. 
+ Попробуйте посмотреть, какой из методов быстрее. (если не видно, увеличьте интервал)
+
 
